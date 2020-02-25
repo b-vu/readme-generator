@@ -1,0 +1,29 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Creating a README.md file based on user input in a CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoobyvuu/readme-generator.git"
+  },
+  "keywords": [
+    "README",
+    "generator",
+    "CLI"
+  ],
+  "author": "Brian Vu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scoobyvuu/readme-generator/issues"
+  },
+  "homepage": "https://github.com/scoobyvuu/readme-generator#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.0.4"
+  }
+}

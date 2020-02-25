@@ -50,7 +50,7 @@ inquirer.prompt([
         name: "questions"
     }
 ]).then(response => {
-    const url = `https://api.github.com/users/${response.username}?access_token=26d0ba87b5fd5322c1a377471402cf60d4326fbc`
+    const url = `https://api.github.com/users/${response.username}?access_token=`
     const project = {
         title: response.title,
         description: response.description,

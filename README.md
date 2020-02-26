@@ -30,7 +30,7 @@ You can run this program as many times as you'd like to test out how you would l
 ## Badges
 
 ![Dependencies Check](https://img.shields.io/david/scoobyvuu/readme-generator?style=flat-square)
-![Repository Size](https://img.shields.io/github/repo-size/scoobyvuu/readme-generator)
+![Repository Size](https://img.shields.io/github/repo-size/scoobyvuu/readme-generator?style=flat-square)
 ![Top Repository Language](https://img.shields.io/github/languages/top/scoobyvuu/readme-generator?style=flat-square)
     
 ## License
@@ -64,11 +64,15 @@ Please refer to the [Contributor Covenant](https://www.contributor-covenant.org/
 ## Credits
     
 Node:
+
 [util](https://nodejs.org/api/util.html)
+
 [fs](https://nodejs.org/api/fs.html)
 
 npm:
+
 [axios](https://www.npmjs.com/package/axios)
+
 [inquirer](https://www.npmjs.com/package/inquirer)
 
 [GitHub API](https://developer.github.com/v3/?#)

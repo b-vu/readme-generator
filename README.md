@@ -64,15 +64,11 @@ Please refer to the [Contributor Covenant](https://www.contributor-covenant.org/
 ## Credits
     
 Node:
-
 [util](https://nodejs.org/api/util.html)
-
 [fs](https://nodejs.org/api/fs.html)
 
 npm:
-
 [axios](https://www.npmjs.com/package/axios)
-
 [inquirer](https://www.npmjs.com/package/inquirer)
 
 [GitHub API](https://developer.github.com/v3/?#)

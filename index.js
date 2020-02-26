@@ -20,6 +20,11 @@ const promptUser = async () =>{
             },
             {
                 type: "input",
+                message: "Please enter the name of your GitHub repository:",
+                name: "repo"
+            },
+            {
+                type: "input",
                 message: "Please enter the title of your project:",
                 name: "title"
             },
@@ -42,7 +47,7 @@ const promptUser = async () =>{
                 type: "list",
                 message: "Please select a license for this project:",
                 name: "license",
-                choices: ["MIT License", "ISC License"]
+                choices: ["MIT License", "ISC License", "GNU General Public License v3.0", "Apache License 2.0"]
             },
             {
                 type: "input",
@@ -68,6 +73,8 @@ const promptUser = async () =>{
         const readmeFile = generateReadMe(answers, github.data[0].payload.commits[0].author.email, github.data[0].actor.avatar_url);
 
         await writeFileAsync(`${answers.title}.md`, readmeFile, "utf8");
+
+        console.log("Your README file has been generated.")
     }
     catch(error){
         console.log(error);
@@ -106,7 +113,9 @@ ${answers.tests}
 
 ## Badges
 
-
+![Dependencies Check](https://img.shields.io/david/${answers.username}/${answers.repo}?style=flat-square)
+![Repository Size](https://img.shields.io/github/repo-size/${answers.username}/${answers.repo})
+![Top Repository Language](https://img.shields.io/github/languages/top/${answers.username}/${answers.repo}?style=flat-square)
     
 ## License
     
@@ -167,6 +176,37 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.`
+
+        case "GNU General Public License v3.0":
+            return `Copyright (C) 2020  ${answers.name}
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+        
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+        
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.`
+
+        case "Apache License 2.0":
+            return `Copyright 2020 ${answers.name}
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.`
     }
 };
 

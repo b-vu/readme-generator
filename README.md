@@ -64,17 +64,12 @@ Please refer to the [Contributor Covenant](https://www.contributor-covenant.org/
 ## Credits
     
 Node:
-
-[util](https://nodejs.org/api/util.html)
-[fs](https://nodejs.org/api/fs.html)
+[util](https://nodejs.org/api/util.html) & [fs](https://nodejs.org/api/fs.html)
 
 npm:
-
-[axios](https://www.npmjs.com/package/axios)
-[inquirer](https://www.npmjs.com/package/inquirer)
+[axios](https://www.npmjs.com/package/axios) & [inquirer](https://www.npmjs.com/package/inquirer)
 
 GitHub:
-
 [GitHub API](https://developer.github.com/v3/?#)
     
 ## Questions

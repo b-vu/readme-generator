@@ -114,7 +114,7 @@ ${answers.tests}
 ## Badges
 
 ![Dependencies Check](https://img.shields.io/david/${answers.username}/${answers.repo}?style=flat-square)
-![Repository Size](https://img.shields.io/github/repo-size/${answers.username}/${answers.repo})
+![Repository Size](https://img.shields.io/github/repo-size/${answers.username}/${answers.repo}?style=flat-square)
 ![Top Repository Language](https://img.shields.io/github/languages/top/${answers.username}/${answers.repo}?style=flat-square)
     
 ## License

@@ -29,9 +29,9 @@ You can run this program as many times as you'd like to test out how you would l
 
 ## Badges
 
-![Dependencies Check](https://img.shields.io/david/scoobyvuu/readme-generator?style=flat-square)
-![Repository Size](https://img.shields.io/github/repo-size/scoobyvuu/readme-generator?style=flat-square)
-![Top Repository Language](https://img.shields.io/github/languages/top/scoobyvuu/readme-generator?style=flat-square)
+![Dependencies Check](https://img.shields.io/david/b-vu/readme-generator?style=flat-square)
+![Repository Size](https://img.shields.io/github/repo-size/b-vu/readme-generator?style=flat-square)
+![Top Repository Language](https://img.shields.io/github/languages/top/b-vu/readme-generator?style=flat-square)
     
 ## License
     

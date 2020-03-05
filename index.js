@@ -123,6 +123,7 @@ ${answers.license}
         
 ## Contributing
     
+Please refer to the [Contributor Covenant](https://www.contributor-covenant.org/) if you'd like to contribute to this project.
 ${answers.contributing}
     
 ## Credits

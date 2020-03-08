@@ -1,4 +1,4 @@
-h# Good README Generator
+# Good README Generator
 
 ## Description
     

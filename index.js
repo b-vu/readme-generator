@@ -140,7 +140,7 @@ const generateLicense = (answers, license) => {
         case "MIT License":
             return `MIT License
 
-Copyright (c) 2020 ${answers.name}. All rights reserved. Licensed under the [MIT License](https://github.com/b-vu/${answers.repo}/blob/master/LICENSE).`
+Copyright © 2020 ${answers.name}. All rights reserved. Licensed under the [MIT License](https://github.com/b-vu/${answers.repo}/blob/master/LICENSE).`
 
         case "ISC License":
             return `ISC License
